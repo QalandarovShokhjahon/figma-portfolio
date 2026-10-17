@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A0A0A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 5%;
+}
+
+.logo a {
+    text-transform: uppercase;
+    color: #C7C7C7;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #C7C7C7;
+    letter-spacing: 1px;
+    transition: 1s;
+    font-size: 18px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #807979;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    padding: 24px 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hero-content h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 0.99;
+    color: #fff;
+}
+
+.hero-content p {
+    color: #C7C7C7;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #D3E97A;
+    color: #0A0A0A;
+    padding: 16px 46px;
+    border-radius: 50px;
+}
+
+a.btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+.hero-img {
+    background-color: #C7C7C7;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+.hero-img img {
+    width: 500px;
+    height: auto;
+}
