@@ -10,7 +10,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
     color: #fff;
 }
 
@@ -60,9 +59,10 @@ nav a:hover {
 /* Hero Section Styles */
 .hero {
     display: flex;
-    padding: 24px 10%;
+    padding: 24px 10% 80px;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #333;
 }
 
 .hero-content {
@@ -72,7 +72,7 @@ nav a:hover {
     gap: 10px;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 100px;
     text-transform: uppercase;
     line-height: 0.99;
@@ -108,4 +108,173 @@ a.btn {
 .hero-img img {
     width: 500px;
     height: auto;
+}
+
+/* Work Section Styles */
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 10%;
+    padding-top: 80px;
+}
+
+.projects-header {
+    margin-bottom: 70px;
+}
+
+.projects-header h2 {
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.projects-header p {
+    font-size: 18px;
+    color: #C7C7C7;
+    max-width: 600px;
+}
+
+.projects-card {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.projects-img {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 100px 40px;
+}
+
+.projects-img img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+}
+
+.projects-content {
+    display: flex;
+    padding: 5% 0px 0px 0px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects-content h3 {
+    font-size: 32px;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.projects-content p {
+    font-size: 18px;
+    color: #C7C7C7;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.projects-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-info h4 {
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid #484848;
+    color: #C7C7C7;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
+
+.info-row:last-child {
+    border-bottom: 1px solid #484848;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 28px;
+    }
+
+    nav {
+    display: none;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 57px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        
+    }
+
+    .hero-img {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .hero-img img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        padding: 16px 36px;
+    }
+
+    /* Work Section Styles */
+    .projects-header h2 {
+        font-size: 43px;
+        margin-bottom: 10px;
+    }
+
+    .projects-header p {
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+    .projects-card {
+        flex-direction: column;
+    }
+
+    .projects-img {
+        background-color: #1a1a1a;
+        padding: 20px 20px;
+    }
+
+    .projects-img img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+
+    .projects-content h3 {
+        font-size: 24px;
+        max-width: 500px;
+    }
+
+    .projects-content p {
+        font-size: 16px;
+    }
 }
