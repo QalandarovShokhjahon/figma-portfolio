@@ -116,6 +116,7 @@ a.btn {
     flex-direction: column;
     padding: 24px 10%;
     padding-top: 80px;
+    border-bottom: 1px solid #333;
 }
 
 .projects-header {
@@ -203,6 +204,104 @@ a.btn {
     border-bottom: 1px solid #484848;
 }
 
+/* About Section Styles */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 120px 10%;
+}
+
+.about-header {
+    flex: 0 0 40%;
+}
+
+.about-header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-content h3 {
+    color: #ffffff;
+    font-family: "Manrope", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+
+.about-content p {
+    color: #C7C7C7;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.about-content a {
+    color: #D3F56A;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #D3F56A;
+    padding-bottom: 6px;
+}
+
+.about-content a:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 10%;
+    border-top: 1px solid #383838;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content p {
+    color: #C7C7C7;
+    font-size: 14px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-socials a {
+    color: #C7C7C7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #D3F56A;
+}
+
+
+
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .logo a {
@@ -276,5 +375,41 @@ a.btn {
 
     .projects-content p {
         font-size: 16px;
+    }
+
+    /* About Section Styles */
+    .about {
+        flex-direction: column;
+        padding: 24px 10%;
+    }
+
+    .about-header {
+        display: none;
+    }
+
+    .about-content h3 {
+        display: none;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .about-content a {
+        font-size: 14px;
+        padding-bottom: 4px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-socials {
+        flex-wrap: wrap;
+        gap: 16px;
     }
 }
